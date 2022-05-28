@@ -43,7 +43,7 @@ class UserAuthController extends Controller
           Mail::send('email-template', $data, function($message) use ($data) {
           $message->to($data['email'])
                 ->subject($data['subject']); 
-          $message->from('kamblepranav460@gmail.com','DoNotReply');
+          $message->from('kamblepranav460@gmail.com','Pranav Kamble');
           });
 
           return response(['message' => 'Email successfully sent!']);
